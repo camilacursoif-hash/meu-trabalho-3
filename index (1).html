@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Profissional - Camila Alves</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Currículo Profissional</h1>
+        <nav class="menu-principal" aria-label="Menu principal">
+            <a href="#sobre">Sobre</a>
+            <a href="#perfil">Perfil</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#formulario">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre" class="secao">
+            <h2>Sobre a candidata</h2>
+            <div class="informacoes">
+                <p><strong>Nome:</strong> Camila Aparecida Alves Araújo</p>
+                <p><strong>Idade:</strong> 21 anos</p>
+                <p><strong>Sexo:</strong> Feminino</p>
+                <p><strong>E-mail:</strong> camilacnco1500@gmail.com</p>
+                <p><strong>Endereço:</strong> Terceiro Milênio, Rua Benedito Alves Ferreira, N° 955A</p>
+            </div>
+        </section>
+
+        <section id="perfil" class="secao perfil">
+            <div>
+                <h2>Perfil da candidata</h2>
+                <p>Conheça um pouco mais sobre a candidata por meio de seu perfil e principal meio de comunicação.</p>
+                <p>
+                    <strong>Principal meio de comunicação:</strong>
+                    <a class="link-destaque"
+                       href="https://www.instagram.com/camila._.araaujo?igsh=MTE4ZjVqNnZoZ2Jzdw=="
+                       target="_blank"
+                       rel="noopener noreferrer">Instagram</a>
+                </p>
+            </div>
+            <img
+                src="https://cajui.ifnmg.edu.br/arquivo/avatar/40/42fc76b5-1f76-455f-8bae-b1bbcb66c5e7.png?m=1774051965"
+                alt="Foto de Camila Araújo">
+        </section>
+
+        <section id="habilidades" class="secao">
+            <h2>Habilidades da candidata</h2>
+            <ul>
+                <li>Boa comunicação</li>
+                <li>Experiência com vendas</li>
+                <li>Inglês intermediário</li>
+            </ul>
+        </section>
+
+        <section id="formulario" class="secao">
+            <h2>Formulário de contato</h2>
+            <p>Preencha os campos abaixo para enviar uma mensagem.</p>
+
+            <form class="formulario-contato"
+                  action="https://api.web3forms.com/submit"
+                  method="POST">
+
+                <!-- Substitua pelo Access Key gerado em https://web3forms.com/ -->
+                <input type="hidden" name="access_key" value="COLE_AQUI_SUA_ACCESS_KEY">
+
+                <input type="hidden" name="subject" value="Nova mensagem pelo currículo profissional">
+                <input type="hidden" name="from_name" value="Formulário do currículo - Camila Alves">
+
+                <!-- Campo anti-spam do Web3Forms: mantenha oculto -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                <div class="campo-formulario">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="name" autocomplete="name" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="message" rows="6" maxlength="1000" required></textarea>
+                    <small>Máximo de 1000 caracteres.</small>
+                </div>
+
+                <button type="submit">Enviar mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2026 - Currículo Profissional</p>
+    </footer>
+</body>
+</html>
